@@ -1,0 +1,39 @@
+/* Khung hiển thị ảnh lớn */
+#image {
+    width: 85%;
+    height: 350px;
+    border: 4px solid #333;
+    margin: 20px auto;
+    background-color: #8e8e8e;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    line-height: 350px; /* Căn chữ giữa khung theo chiều dọc */
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000; /* Giúp chữ dễ đọc hơn khi có ảnh nền */
+}
+
+/* Vùng chứa các ảnh nhỏ */
+.preview-container {
+    text-align: center;
+}
+
+/* Các ảnh nhỏ */
+.preview {
+    width: 150px;
+    height: 100px;
+    border: 2px solid #333;
+    margin: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+/* Hiệu ứng phóng to nhẹ khi di chuột vào ảnh nhỏ */
+.preview:hover {
+    transform: scale(1.05);
+}

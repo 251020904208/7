@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung hiển thị ảnh lớn và chữ -->
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <!-- Danh sách các ảnh nhỏ phía dưới -->
+    <div class="preview-container">
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500" 
+             alt="Bãi biển đầy nắng vàng" 
+             onmouseover="upDate(this)" 
+             onmouseleave="undo()">
+
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500" 
+             alt="Rừng núi sương mù mờ ảo" 
+             onmouseover="upDate(this)" 
+             onmouseleave="undo()">
+
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=500" 
+             alt="Cây cầu gỗ bắc qua suối" 
+             onmouseover="upDate(this)" 
+             onmouseleave="undo()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
